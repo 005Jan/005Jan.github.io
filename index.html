@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jan Camps Atmetller - Portfolio</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="dark-theme">
+
+    <div class="ambient-glow glow-blue"></div>
+    <div class="ambient-glow glow-purple"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-name">Jan Camps Atmetller</span>
+            </div>
+
+            <div class="lang-selector">
+                <button class="lang-btn active" data-lang="ca">CAT</button>
+                <button class="lang-btn" data-lang="es">ESP</button>
+                <button class="lang-btn" data-lang="en">ENG</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container" style="position: relative; z-index: 10;">
+        <div class="hero-wrapper">
+            <section class="hero slide-up" style="--delay: 0.1s">
+                <div class="hero-content">
+                    <div class="status-badge" data-i18n="badge_status">Treballant a NeodataMeat</div>
+                    <h1 class="hero-title"><span data-i18n="hero_hello">Hola! Soc</span> <span class="highlight">Jan
+                            Camps Atmetller</span></h1>
+                    <p class="hero-subtitle" data-i18n="hero_desc">
+                        Estudiant del Grau Superior d'Administració de Sistemes Informàtics en Xarxa (ASIX).
+                        Apassionat per la tecnologia, els servidors i la resolució d'incidències.
+                    </p>
+                    <div class="social-links">
+                        <a href="mailto:jcamps0005@gmail.com" class="social-btn"><i class="fa-regular fa-envelope"></i>
+                            jcamps0005@gmail.com</a>
+                        <a href="https://www.linkedin.com/in/jan-camps-atmetller-422630354/" target="_blank"
+                            class="social-btn"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                        <a href="tel:+34722586444" class="social-btn"><i class="fa-solid fa-phone"></i> +34 722 58 64
+                            44</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="profile.jpg" alt="Jan Camps Atmetller" id="profile-img">
+                </div>
+            </section>
+        </div>
+
+        <section class="section slide-up" style="--delay: 0.15s">
+            <h2 class="section-title"><i class="fa-regular fa-user"></i> <span data-i18n="nav_about">Sobre mi</span>
+            </h2>
+            <div class="about-card" style="padding: 1rem 0;">
+                <p data-i18n="about_p1">Soc <strong>Administrador de Sistemes en Xarxa</strong> amb experiència prèvia
+                    com a tècnic de sistemes en entorn empresarial.</p>
+                <p data-i18n="about_p2">Actualment treballo a <strong>NeodataMeat</strong> com a tècnic de sistemes, on
+                    gestiono servidors Windows, Active Directory, Microsoft Dynamics CRM, Power Platform i entorns
+                    virtualitzats, resolent incidències i participant en la millora de processos interns.</p>
+            </div>
+        </section>
+
+        <section class="section slide-up" style="--delay: 0.2s">
+            <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> <span data-i18n="nav_exp">Experiència
+                    Laboral</span></h2>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="card-title" data-i18n="exp_title_1">Tècnic de Sistemes Junior</h3>
+                                <p class="card-subtitle">NeodataMeat</p>
+                            </div>
+                            <span class="badge" data-i18n="exp_date_1">Març 2025 - Present</span>
+                        </div>
+                        <ul class="card-list" data-i18n-html="exp_desc_1">
+                            <li>Administració d'usuaris amb Active Directory.</li>
+                            <li>Suport tècnic a usuaris.</li>
+                            <li>Gestió bàsica de servidors Windows.</li>
+                            <li>Automatització amb Power Automate.</li>
+                            <li>Resolució d'incidències IT.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="card timeline-card">
+                        <div class="card-header">
+                            <div>
+                                <h3 class="card-title" data-i18n="exp_title_2">Tècnic de Sistemes (Pràctiques DUAL)</h3>
+                                <p class="card-subtitle">NeodataMeat</p>
+                            </div>
+                            <span class="badge" data-i18n="exp_date_2">Juny 2024 - Febrer 2025</span>
+                        </div>
+                        <ul class="card-list" data-i18n-html="exp_desc_2">
+                            <li>Suport tècnic.</li>
+                            <li>Configuració d'equips.</li>
+                            <li>Instal·lació de software.</li>
+                            <li>Manteniment informàtic.</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="section slide-up" style="--delay: 0.3s">
+            <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> <span
+                    data-i18n="nav_edu">Educació</span></h2>
+            <div class="grid-2-col">
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" data-i18n="edu_title_1">Grau Superior ASIX</h3>
+                            <p class="card-subtitle">Escola Professional Salesiana</p>
+                        </div>
+                    </div>
+                    <p class="card-text" data-i18n="edu_desc_1">Grau Superior en Administració de Sistemes Informàtics
+                        en Xarxa.</p>
+                    <span class="badge badge-outline" data-i18n="edu_date_1">2025 - Act.</span>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div>
+                            <h3 class="card-title" data-i18n="edu_title_2">Grau Mitjà SMX</h3>
+                            <p class="card-subtitle">Escola Professional Salesiana</p>
+                        </div>
+                    </div>
+                    <p class="card-text" data-i18n="edu_desc_2">Grau Mitjà en Sistemes microinformàtics i xarxes.</p>
+                    <span class="badge badge-outline" data-i18n="edu_date_2">2023 - 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section slide-up" style="--delay: 0.4s">
+            <h2 class="section-title"><i class="fa-solid fa-layer-group"></i> <span
+                    data-i18n="nav_skills">Habilitats</span></h2>
+
+            <div class="grid-3-col">
+                <div class="card skills-card border-blue">
+                    <h3 class="card-title center-title" data-i18n="skills_systems">SISTEMES & XARXES</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item skill-win"><i class="fa-brands fa-windows"></i><span
+                                data-i18n="skill_ws">Windows Server</span></div>
+                        <div class="skill-item skill-net"><i class="fa-brands fa-linux"></i><span
+                                data-i18n="skill_linux">GNU/Linux</span></div>
+                        <div class="skill-item skill-ad"><i class="fa-solid fa-users"></i><span
+                                data-i18n="skill_ad">Active Directory</span></div>
+                        <div class="skill-item skill-net"><i class="fa-solid fa-network-wired"></i><span
+                                data-i18n="skill_net">Serveis de Xarxa</span></div>
+                        <div class="skill-item skill-win"><i class="fa-solid fa-server"></i><span
+                                data-i18n="skill_virt">Virtualització</span></div>
+                        <div class="skill-item skill-hw"><i class="fa-solid fa-screwdriver-wrench"></i><span
+                                data-i18n="skill_hw">Consultoria IT</span></div>
+                    </div>
+                </div>
+
+                <div class="card skills-card border-orange">
+                    <h3 class="card-title center-title" data-i18n="skills_business">BASES DE DADES & EMPRESA</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item skill-sql"><i class="fa-solid fa-database"></i><span>SQL (SELECT,
+                                JOIN...)</span></div>
+                        <div class="skill-item skill-crm"><i class="fa-solid fa-briefcase"></i><span>Dynamics
+                                AX/BC</span></div>
+                        <div class="skill-item skill-sql"><i class="fa-solid fa-magnifying-glass-chart"></i><span
+                                data-i18n="skill_data">Càlcul i Dades</span></div>
+                        <div class="skill-item skill-crm"><i class="fa-solid fa-chart-column"></i><span>Power BI</span>
+                        </div>
+                        <div class="skill-item skill-auto"><i class="fa-solid fa-robot"></i><span>Power Automate</span>
+                        </div>
+                        <div class="skill-item skill-net"><i class="fa-brands fa-microsoft"></i><span>Microsoft
+                                365</span></div>
+                    </div>
+                </div>
+
+                <div class="card skills-card border-purple">
+                    <h3 class="card-title center-title" data-i18n="skills_soft">APTITUDS</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item skill-soft-1"><i class="fa-solid fa-bug"></i><span
+                                data-i18n="apt_1">Resolució Incidències</span></div>
+                        <div class="skill-item skill-soft-2"><i class="fa-solid fa-server"></i><span
+                                data-i18n="apt_2">Administració</span></div>
+                        <div class="skill-item skill-soft-3"><i class="fa-solid fa-brain"></i><span
+                                data-i18n="apt_3">Aprenentatge ràpid</span></div>
+                        <div class="skill-item skill-soft-4"><i class="fa-solid fa-people-group"></i><span
+                                data-i18n="apt_4">Treball en equip</span></div>
+                        <div class="skill-item skill-soft-6"><i class="fa-regular fa-comments"></i><span
+                                data-i18n="apt_6">Comunicació</span></div>
+                        <div class="skill-item skill-soft-5"><i class="fa-solid fa-arrows-rotate"></i><span
+                                data-i18n="apt_5">Adaptabilitat</span></div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <section class="section slide-up" style="--delay: 0.5s">
+            <h2 class="section-title"><i class="fa-solid fa-certificate"></i> <span data-i18n="courses_title">Cursos
+                    i Certificats</span></h2>
+            <div class="courses-list" style="padding: 1rem 0;">
+                <ul class="clean-list">
+                    <li data-i18n="course_1">Google: Inteligencia Artificial y Productividad</li>
+                    <li data-i18n="course_2">Microsoft Copilot</li>
+                    <li data-i18n="course_3">Fundamentos de ChatGPT</li>
+                    <li data-i18n="course_4">Curs Ethical Hacking</li>
+                    <li data-i18n="course_5">Curs Introducció a Python</li>
+                </ul>
+            </div>
+        </section>
+
+        
+        <footer class="footer">
+            <p>&copy; 2026 Jan Camps Atmetller. Tots els drets reservats.</p>
+        </footer>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
