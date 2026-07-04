@@ -62,6 +62,9 @@ const translations = {
         "proj_assistant_sub": "Assistent personal amb IA a Telegram",
         "proj_assistant_desc": "Un agent d'IA amb <em>tool-calling</em> que gestiona despeses, hàbits, recordatoris, dades de salut (Garmin), notícies i molt més, tot a partir de llenguatge natural o notes de veu. Combina Claude (AWS Bedrock) per al raonament i Groq (Llama + Whisper) per a la veu i les tasques ràpides. Desplegat amb Docker en una Raspberry Pi.",
         "proj_view": "Veure al GitHub",
+        "proj_portfolio_title": "Portfolio Personal",
+        "proj_portfolio_sub": "Web multilingüe (CA/ES/EN)",
+        "proj_portfolio_desc": "Aquest mateix portfolio, desenvolupat des de zero: web d'una sola pàgina, responsive i amb tema fosc. Destaca un sistema multilingüe propi (català, castellà i anglès) amb canvi d'idioma instantani al client, sense recarregar la pàgina. Fet amb HTML, CSS i JavaScript vanilla, amb animacions d'scroll i navegació activa (scrollspy). Desplegat amb GitHub Pages.",
         "footer_rights": "Tots els drets reservats"
     },
     "es": {
@@ -126,6 +129,9 @@ const translations = {
         "proj_assistant_sub": "Asistente personal con IA en Telegram",
         "proj_assistant_desc": "Un agente de IA con <em>tool-calling</em> que gestiona gastos, hábitos, recordatorios, datos de salud (Garmin), noticias y mucho más, todo a partir de lenguaje natural o notas de voz. Combina Claude (AWS Bedrock) para el razonamiento y Groq (Llama + Whisper) para la voz y las tareas rápidas. Desplegado con Docker en una Raspberry Pi.",
         "proj_view": "Ver en GitHub",
+        "proj_portfolio_title": "Portafolio Personal",
+        "proj_portfolio_sub": "Web multilingüe (CA/ES/EN)",
+        "proj_portfolio_desc": "Este mismo portafolio, desarrollado desde cero: web de una sola página, responsive y con tema oscuro. Destaca un sistema multilingüe propio (catalán, castellano e inglés) con cambio de idioma instantáneo en el cliente, sin recargar la página. Hecho con HTML, CSS y JavaScript vanilla, con animaciones de scroll y navegación activa (scrollspy). Desplegado con GitHub Pages.",
         "footer_rights": "Todos los derechos reservados"
     },
     "en": {
@@ -190,6 +196,9 @@ const translations = {
         "proj_assistant_sub": "AI-powered personal assistant on Telegram",
         "proj_assistant_desc": "An AI agent with <em>tool-calling</em> that manages expenses, habits, reminders, health data (Garmin), news and much more — all from natural language or voice notes. It combines Claude (AWS Bedrock) for reasoning and Groq (Llama + Whisper) for voice and quick tasks. Deployed with Docker on a Raspberry Pi.",
         "proj_view": "View on GitHub",
+        "proj_portfolio_title": "Personal Portfolio",
+        "proj_portfolio_sub": "Multilingual website (CA/ES/EN)",
+        "proj_portfolio_desc": "This very portfolio, built from scratch: a responsive single-page site with a dark theme. It features a custom multilingual system (Catalan, Spanish and English) with instant client-side language switching, no page reload. Built with vanilla HTML, CSS and JavaScript, with scroll animations and active-section navigation (scrollspy). Deployed on GitHub Pages.",
         "footer_rights": "All rights reserved"
     }
 };
