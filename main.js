@@ -57,6 +57,11 @@ const translations = {
         "course_4": "Ethical Hacking",
         "course_6": "Intro to Threat Landscape 3.0",
         "course_7": "Technical Intro to Cybersecurity 3.0",
+        "nav_projects_short": "Projectes",
+        "nav_projects": "Projectes Personals",
+        "proj_assistant_sub": "Assistent personal amb IA a Telegram",
+        "proj_assistant_desc": "Un agent d'IA amb <em>tool-calling</em> que gestiona despeses, hàbits, recordatoris, dades de salut (Garmin), notícies i molt més, tot a partir de llenguatge natural o notes de veu. Combina Claude (AWS Bedrock) per al raonament i Groq (Llama + Whisper) per a la veu i les tasques ràpides. Desplegat amb Docker en una Raspberry Pi.",
+        "proj_view": "Veure al GitHub",
         "footer_rights": "Tots els drets reservats"
     },
     "es": {
@@ -116,6 +121,11 @@ const translations = {
         "course_4": "Ethical Hacking",
         "course_6": "Intro to Threat Landscape 3.0",
         "course_7": "Technical Intro to Cybersecurity 3.0",
+        "nav_projects_short": "Proyectos",
+        "nav_projects": "Proyectos Personales",
+        "proj_assistant_sub": "Asistente personal con IA en Telegram",
+        "proj_assistant_desc": "Un agente de IA con <em>tool-calling</em> que gestiona gastos, hábitos, recordatorios, datos de salud (Garmin), noticias y mucho más, todo a partir de lenguaje natural o notas de voz. Combina Claude (AWS Bedrock) para el razonamiento y Groq (Llama + Whisper) para la voz y las tareas rápidas. Desplegado con Docker en una Raspberry Pi.",
+        "proj_view": "Ver en GitHub",
         "footer_rights": "Todos los derechos reservados"
     },
     "en": {
@@ -175,6 +185,11 @@ const translations = {
         "course_4": "Ethical Hacking",
         "course_6": "Intro to Threat Landscape 3.0",
         "course_7": "Technical Intro to Cybersecurity 3.0",
+        "nav_projects_short": "Projects",
+        "nav_projects": "Personal Projects",
+        "proj_assistant_sub": "AI-powered personal assistant on Telegram",
+        "proj_assistant_desc": "An AI agent with <em>tool-calling</em> that manages expenses, habits, reminders, health data (Garmin), news and much more — all from natural language or voice notes. It combines Claude (AWS Bedrock) for reasoning and Groq (Llama + Whisper) for voice and quick tasks. Deployed with Docker on a Raspberry Pi.",
+        "proj_view": "View on GitHub",
         "footer_rights": "All rights reserved"
     }
 };
