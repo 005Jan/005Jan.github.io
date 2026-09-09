@@ -69,10 +69,10 @@ A key missing from one language leaves that element blank, so add all three.
 
 ---
 
-## License
+## Copyright
 
-[MIT](LICENSE) — Copyright (c) 2026 005Jan
+© 2026 Jan Camps Atmetller. All rights reserved.
 
-The MIT licence covers the **code** of this site (markup, styles, scripts).
-It does not grant rights over the personal content: the profile photo, the CV
-text, and the name and likeness of the author.
+This repository is published so the site can be served from GitHub Pages, and
+is readable as a work sample. It carries no open-source licence: the code, the
+profile photo and the CV text are not offered for reuse or redistribution.
