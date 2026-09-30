@@ -490,6 +490,11 @@ a:hover { color: var(--accent-blue-hover); }
     background: linear-gradient(135deg, rgba(249, 115, 22, 0.05) 0%, transparent 100%);
 }
 
+.skills-card.border-green {
+    border-left: 3px solid #34d399;
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, transparent 100%);
+}
+
 .skills-card.border-purple {
     border-left: 3px solid var(--accent-purple);
     background: linear-gradient(135deg, rgba(129, 140, 248, 0.05) 0%, transparent 100%);
