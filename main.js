@@ -72,10 +72,6 @@ const translations = {
         "about_p4": "Curso el Grau Superior d'ASIX a Salesians Sarrià i continuo creixent en xarxes i ciberseguretat. Estic obert a oportunitats en administració de sistemes, infraestructura i automatització.",
         "skills_dev": "DESENVOLUPAMENT & IA",
         "proj_badge_case": "Cas d'estudi",
-        "proj_badge_archived": "Arxivat",
-        "proj_findings": "Llegir les conclusions",
-        "proj_poly_sub": "Recerca quantitativa · copy-trading simulat",
-        "proj_poly_desc": "Sistema que detecta wallets rendibles al rànquing de Polymarket i en replica les operacions <strong>només en paper trading</strong>, sense diners reals ni claus privades. Dos serveis Docker: un descobreix wallets cada 24 h i l'altre en vigila l'activitat cada 60 s i opera quan detecta consens. Filtre d'EV i slippage, quarantena de wallets i dimensionament amb Kelly fraccional. Després d'un experiment en viu de 10 dies i vuit canvis de paràmetres, vaig <strong>documentar per què l'estratègia no tenia avantatge</strong> (win rate del 9,5% i ROI del −2,47%) i el vaig arxivar en lloc de sobreajustar-lo.",
         "footer_rights": "Tots els drets reservats"
     },
     "es": {
@@ -150,10 +146,6 @@ const translations = {
         "about_p4": "Curso el Grado Superior de ASIX en Salesians Sarrià y sigo creciendo en redes y ciberseguridad. Estoy abierto a oportunidades en administración de sistemas, infraestructura y automatización.",
         "skills_dev": "DESARROLLO E IA",
         "proj_badge_case": "Caso de estudio",
-        "proj_badge_archived": "Archivado",
-        "proj_findings": "Leer las conclusiones",
-        "proj_poly_sub": "Investigación cuantitativa · copy-trading simulado",
-        "proj_poly_desc": "Sistema que detecta wallets rentables en el ranking de Polymarket y replica sus operaciones <strong>solo en paper trading</strong>, sin dinero real ni claves privadas. Dos servicios Docker: uno descubre wallets cada 24 h y el otro vigila su actividad cada 60 s y opera cuando detecta consenso. Filtro de EV y slippage, cuarentena de wallets y dimensionamiento con Kelly fraccional. Tras un experimento en vivo de 10 días y ocho cambios de parámetros, <strong>documenté por qué la estrategia no tenía ventaja</strong> (win rate del 9,5% y ROI del −2,47%) y lo archivé en lugar de sobreajustarlo.",
         "footer_rights": "Todos los derechos reservados"
     },
     "en": {
@@ -228,10 +220,6 @@ const translations = {
         "about_p4": "I'm studying the Higher Degree in ASIX at Salesians Sarrià and keep growing in networking and cybersecurity. I'm open to opportunities in systems administration, infrastructure and automation.",
         "skills_dev": "DEVELOPMENT & AI",
         "proj_badge_case": "Case study",
-        "proj_badge_archived": "Archived",
-        "proj_findings": "Read the findings",
-        "proj_poly_sub": "Quantitative research · simulated copy-trading",
-        "proj_poly_desc": "A system that detects profitable wallets on the Polymarket leaderboard and replicates their trades in <strong>paper trading only</strong>, with no real funds or private keys. Two Docker services: one discovers wallets every 24 h, the other watches their activity every 60 s and trades when it detects consensus. EV and slippage filter, wallet quarantine and fractional Kelly sizing. After a 10-day live experiment and eight parameter changes, I <strong>documented why the strategy had no edge</strong> (9.5% win rate, −2.47% ROI) and archived it rather than overfitting it.",
         "footer_rights": "All rights reserved"
     }
 };
