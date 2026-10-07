@@ -56,8 +56,7 @@
                     </h1>
                     <p class="hero-role" data-i18n="hero_role">Tècnic de Sistemes · ASIX</p>
                     <p class="hero-subtitle" data-i18n="hero_desc">
-                        Infraestructura Windows i automatització de processos a NeodataMeat.
-                        Fora de la feina, dissenyo i autoallotjo aplicacions amb IA.
+                        Infraestructura Windows i automatització de processos a NeodataMeat. Fora de la feina, administro la meva pròpia infraestructura Linux i hi desplego aplicacions.
                     </p>
                     <div class="social-links">
                         <a href="mailto:jcamps0005@gmail.com" class="social-btn">
@@ -91,7 +90,7 @@
             <div class="about-card">
                 <p data-i18n="about_p1">Soc <strong>Tècnic de Sistemes</strong> amb experiència en entorns empresarials, especialitzat en administració de sistemes Windows, Active Directory i automatització de processos amb Power Platform.</p>
                 <p data-i18n="about_p2">Treballo a <strong>NeodataMeat</strong> gestionant infraestructures IT, resolent incidències tècniques i participant activament en la millora de processos interns mitjançant Microsoft Dynamics CRM i Power Automate.</p>
-                <p data-i18n="about_p3">Fora de la feina dissenyo, construeixo i autoallotjo aplicacions completes, del model de dades al desplegament, amb un interès especial pels <strong>agents d'IA amb <em>tool-calling</em></strong>, els sistemes multi-usuari i l'automatització pràctica.</p>
+                <p data-i18n="about_p3">Fora de la feina administro un servidor Linux autoallotjat i hi construeixo aplicacions completes, del model de dades al desplegament, amb especial atenció a la <strong>seguretat, les còpies de seguretat i el monitoratge</strong>, i un interès especial pels agents d'IA i l'automatització pràctica.</p>
                 <p data-i18n="about_p4">Curso el Grau Superior d'ASIX a Salesians Sarrià i continuo creixent en xarxes i ciberseguretat. Estic obert a oportunitats en administració de sistemes, infraestructura i automatització.</p>
             </div>
         </section>
@@ -256,6 +255,26 @@
             <div class="card project-card">
                 <div class="card-header">
                     <div>
+                        <h3 class="card-title">HomePi</h3>
+                        <p class="card-subtitle" data-i18n="proj_homepi_sub">Servidor autoallotjat sobre Raspberry Pi 4</p>
+                    </div>
+                    <span class="badge badge-outline" data-i18n="proj_badge_infra">Infraestructura</span>
+                </div>
+                <p class="card-text" data-i18n="proj_homepi_desc">Servidor domèstic (ARM64) que allotja els meus projectes sota un domini propi, gestionat com un petit entorn de producció. <strong>Traefik</strong> com a proxy invers amb HTTPS automàtic (Let's Encrypt), VPN <strong>WireGuard</strong> per a l'accés remot, <strong>Vaultwarden</strong> com a gestor de contrasenyes, i Portainer i Watchtower per gestionar els contenidors. Regles de tallafoc pròpies a la cadena DOCKER-USER i monitoratge de les URL públiques amb avisos per Telegram. <strong>Còpies nocturnes</strong> al disc extern, amb els secrets xifrats amb GPG i verificades restaurant-les en contenidors efímers. Un tauler web i un bot de Telegram permeten consultar l'estat, reiniciar serveis i restaurar còpies amb confirmació en dos passos. Repositori privat.</p>
+                <div class="skills-tags">
+                    <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux</span>
+                    <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                    <span class="skill-tag"><i class="fa-solid fa-route"></i> Traefik</span>
+                    <span class="skill-tag"><i class="fa-solid fa-lock"></i> WireGuard</span>
+                    <span class="skill-tag"><i class="fa-solid fa-key"></i> Vaultwarden</span>
+                    <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Bash</span>
+                    <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> GPG</span>
+                    <span class="skill-tag"><i class="fa-brands fa-raspberry-pi"></i> Raspberry Pi</span>
+                </div>
+            </div>
+            <div class="card project-card">
+                <div class="card-header">
+                    <div>
                         <h3 class="card-title">Kovia</h3>
                         <p class="card-subtitle" data-i18n="proj_kovia_sub">Assistent personal multi-usuari amb IA</p>
                     </div>
@@ -280,23 +299,45 @@
             <div class="card project-card">
                 <div class="card-header">
                     <div>
-                        <h3 class="card-title">Assistant Bot</h3>
-                        <p class="card-subtitle" data-i18n="proj_assistant_sub">Assistent personal amb IA a Telegram</p>
+                        <h3 class="card-title">Segon Cervell</h3>
+                        <p class="card-subtitle" data-i18n="proj_cervell_sub">RAG privat sobre els meus apunts</p>
                     </div>
                     <span class="badge badge-outline">Open Source</span>
                 </div>
-                <p class="card-text" data-i18n="proj_assistant_desc">Assistent personal que funciona amb llenguatge natural i notes de veu: despeses, hàbits, recordatoris, tasques recurrents, Google Calendar, el temps, cerca web i dades de salut de Garmin. Agent amb <em>tool-calling</em> i <strong>enrutament entre dos models</strong> per reduir costos: Groq (Llama) per a les tasques ràpides i Claude (AWS Bedrock) per al raonament complex. Veu d'anada i tornada amb Whisper i Amazon Polly. La integració amb Garmin és un microservei en Python a part. Desplegat amb Docker en una Raspberry Pi.</p>
+                <p class="card-text" data-i18n="proj_cervell_desc">Base de coneixement sobre els meus apunts i temaris que respon preguntes citant la font. <strong>Cerca híbrida</strong>: vectorial (sqlite-vec) i per paraules (FTS5), fusionades amb Reciprocal Rank Fusion. Ingereix PDF, Word i PowerPoint, amb <strong>OCR</strong> de Tesseract per als escanejos i visió de Claude per als manuscrits, i un filtre de confiança perquè el text erroni no entri a l'índex. Ingesta resumible i idempotent per hash, respostes en streaming amb cites clicables i web instal·lable com a PWA.</p>
                 <div class="skills-tags">
-                    <span class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
-                    <span class="skill-tag"><i class="fa-brands fa-telegram"></i> Telegraf</span>
-                    <span class="skill-tag"><i class="fa-solid fa-robot"></i> Claude · Groq</span>
-                    <span class="skill-tag"><i class="fa-brands fa-aws"></i> AWS Bedrock</span>
-                    <span class="skill-tag"><i class="fa-solid fa-database"></i> SQLite</span>
                     <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="skill-tag"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                    <span class="skill-tag"><i class="fa-solid fa-magnifying-glass"></i> RAG · sqlite-vec</span>
+                    <span class="skill-tag"><i class="fa-brands fa-aws"></i> AWS Bedrock</span>
+                    <span class="skill-tag"><i class="fa-solid fa-file-lines"></i> Tesseract OCR</span>
                     <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
                 </div>
                 <div class="social-links" style="margin-top: 1.25rem;">
-                    <a href="https://github.com/005Jan/Assistant-bot" target="_blank" class="social-btn">
+                    <a href="https://github.com/005Jan/segon-cervell" target="_blank" class="social-btn">
+                        <i class="fa-brands fa-github"></i> <span data-i18n="proj_view">Veure al GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="card project-card">
+                <div class="card-header">
+                    <div>
+                        <h3 class="card-title">Ajuts</h3>
+                        <p class="card-subtitle" data-i18n="proj_ajuts_sub">Cercador de subvencions públiques</p>
+                    </div>
+                    <span class="badge badge-outline">Open Source</span>
+                </div>
+                <p class="card-text" data-i18n="proj_ajuts_desc">Llegeix cada dia la Base de Datos Nacional de Subvenciones (BDNS) i mostra a cada usuari les convocatòries obertes que encaixen amb el seu perfil i territori, ordenades per termini. <strong>Puntuació determinista, sense LLM</strong>, perquè pugui funcionar anys sense vigilar cap quota, i llindars extrets del PDF de les bases. Sincronització incremental que recupera els forats després d'una aturada i avisos agrupats per Telegram. Multi-usuari per invitació, amb contrasenyes <strong>Argon2id</strong>, protecció CSRF i dades personals xifrades (Fernet). 85 proves automatitzades.</p>
+                <div class="skills-tags">
+                    <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                    <span class="skill-tag"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+                    <span class="skill-tag"><i class="fa-solid fa-database"></i> SQLAlchemy · SQLite</span>
+                    <span class="skill-tag"><i class="fa-solid fa-code"></i> HTMX</span>
+                    <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> Argon2id · CSRF</span>
+                    <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
+                </div>
+                <div class="social-links" style="margin-top: 1.25rem;">
+                    <a href="https://github.com/005Jan/ajuts" target="_blank" class="social-btn">
                         <i class="fa-brands fa-github"></i> <span data-i18n="proj_view">Veure al GitHub</span>
                     </a>
                 </div>
@@ -320,28 +361,6 @@
                 </div>
                 <div class="social-links" style="margin-top: 1.25rem;">
                     <a href="https://github.com/005Jan/HabitForge" target="_blank" class="social-btn">
-                        <i class="fa-brands fa-github"></i> <span data-i18n="proj_view">Veure al GitHub</span>
-                    </a>
-                </div>
-            </div>
-            <div class="card project-card">
-                <div class="card-header">
-                    <div>
-                        <h3 class="card-title" data-i18n="proj_portfolio_title">Portfolio Personal</h3>
-                        <p class="card-subtitle" data-i18n="proj_portfolio_sub">Web multilingüe (CA/ES/EN)</p>
-                    </div>
-                    <span class="badge badge-outline">Open Source</span>
-                </div>
-                <p class="card-text" data-i18n="proj_portfolio_desc">Aquest mateix portfolio, desenvolupat des de zero: web d'una sola pàgina, responsive i amb tema fosc. Destaca un sistema multilingüe propi (català, castellà i anglès) amb canvi d'idioma instantani al client, sense recarregar la pàgina. Fet amb HTML, CSS i JavaScript vanilla, amb animacions d'scroll i navegació activa (scrollspy). Desplegat amb GitHub Pages.</p>
-                <div class="skills-tags">
-                    <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
-                    <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5</span>
-                    <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                    <span class="skill-tag"><i class="fa-solid fa-mobile-screen-button"></i> Responsive</span>
-                    <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub Pages</span>
-                </div>
-                <div class="social-links" style="margin-top: 1.25rem;">
-                    <a href="https://github.com/005Jan/005Jan.github.io" target="_blank" class="social-btn">
                         <i class="fa-brands fa-github"></i> <span data-i18n="proj_view">Veure al GitHub</span>
                     </a>
                 </div>
