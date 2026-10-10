@@ -64,8 +64,6 @@ const translations = {
         "proj_view": "Veure al GitHub",
         "proj_ajuts_desc": "Llegeix cada dia la Base de Datos Nacional de Subvenciones (BDNS) i mostra a cada usuari les convocatòries obertes que encaixen amb el seu perfil i territori, ordenades per termini. <strong>Puntuació determinista, sense LLM</strong>, perquè pugui funcionar anys sense vigilar cap quota, i llindars extrets del PDF de les bases. Sincronització incremental que recupera els forats després d'una aturada i avisos agrupats per Telegram. Multi-usuari per invitació, amb contrasenyes <strong>Argon2id</strong>, protecció CSRF i dades personals xifrades (Fernet). 85 proves automatitzades.",
         "proj_ajuts_sub": "Cercador de subvencions públiques",
-        "proj_cervell_desc": "Base de coneixement sobre els meus apunts i temaris que respon preguntes citant la font. <strong>Cerca híbrida</strong>: vectorial (sqlite-vec) i per paraules (FTS5), fusionades amb Reciprocal Rank Fusion. Ingereix PDF, Word i PowerPoint, amb <strong>OCR</strong> de Tesseract per als escanejos i visió de Claude per als manuscrits, i un filtre de confiança perquè el text erroni no entri a l'índex. Ingesta resumible i idempotent per hash, respostes en streaming amb cites clicables i web instal·lable com a PWA.",
-        "proj_cervell_sub": "RAG privat sobre els meus apunts",
         "proj_homepi_desc": "Servidor domèstic (ARM64) que allotja els meus projectes sota un domini propi, gestionat com un petit entorn de producció. <strong>Traefik</strong> com a proxy invers amb HTTPS automàtic (Let's Encrypt), VPN <strong>WireGuard</strong> per a l'accés remot, <strong>Vaultwarden</strong> com a gestor de contrasenyes, i Portainer i Watchtower per gestionar els contenidors. Regles de tallafoc pròpies a la cadena DOCKER-USER i monitoratge de les URL públiques amb avisos per Telegram. <strong>Còpies nocturnes</strong> al disc extern, amb els secrets xifrats amb GPG i verificades restaurant-les en contenidors efímers. Un tauler web i un bot de Telegram permeten consultar l'estat, reiniciar serveis i restaurar còpies amb confirmació en dos passos. Repositori privat.",
         "proj_homepi_sub": "Servidor autoallotjat sobre Raspberry Pi 4",
         "proj_badge_infra": "Infraestructura",
@@ -73,7 +71,7 @@ const translations = {
         "proj_habitforge_desc": "Seguiment d'hàbits multi-usuari, instal·lable al mòbil com una app nativa i amb funcionament offline. Notificacions push reals amb Web Push (VAPID) i un sistema de recordatoris prioritzat (ratxa en perill, última oportunitat i resum setmanal) que no envia mai més d'una notificació per hora. Ratxes, fites, estadístiques diàries, setmanals, mensuals i anuals, i un mapa de calor anual. API REST amb Express i MariaDB; frontend en JavaScript vanilla amb un service worker escrit a mà. Desplegat amb Docker Compose i Traefik amb HTTPS automàtic.",
         "about_p4": "Curso el Grau Superior d'ASIX a Salesians Sarrià i continuo creixent en xarxes i ciberseguretat. Estic obert a oportunitats en administració de sistemes, infraestructura i automatització.",
         "skills_dev": "DESENVOLUPAMENT & IA",
-        "proj_badge_case": "Cas d'estudi",
+        "proj_badge_case": "Codi privat",
         "footer_rights": "Tots els drets reservats"
     },
     "es": {
@@ -140,8 +138,6 @@ const translations = {
         "proj_view": "Ver en GitHub",
         "proj_ajuts_desc": "Lee cada día la Base de Datos Nacional de Subvenciones (BDNS) y muestra a cada usuario las convocatorias abiertas que encajan con su perfil y territorio, ordenadas por plazo. <strong>Puntuación determinista, sin LLM</strong>, para que pueda funcionar años sin vigilar ninguna cuota, y umbrales extraídos del PDF de las bases. Sincronización incremental que recupera los huecos tras una parada y avisos agrupados por Telegram. Multiusuario por invitación, con contraseñas <strong>Argon2id</strong>, protección CSRF y datos personales cifrados (Fernet). 85 pruebas automatizadas.",
         "proj_ajuts_sub": "Buscador de subvenciones públicas",
-        "proj_cervell_desc": "Base de conocimiento sobre mis apuntes y temarios que responde preguntas citando la fuente. <strong>Búsqueda híbrida</strong>: vectorial (sqlite-vec) y por palabras (FTS5), fusionadas con Reciprocal Rank Fusion. Ingiere PDF, Word y PowerPoint, con <strong>OCR</strong> de Tesseract para los escaneos y visión de Claude para los manuscritos, y un filtro de confianza para que el texto erróneo no entre en el índice. Ingesta reanudable e idempotente por hash, respuestas en streaming con citas clicables y web instalable como PWA.",
-        "proj_cervell_sub": "RAG privado sobre mis apuntes",
         "proj_homepi_desc": "Servidor doméstico (ARM64) que aloja mis proyectos bajo un dominio propio, gestionado como un pequeño entorno de producción. <strong>Traefik</strong> como proxy inverso con HTTPS automático (Let's Encrypt), VPN <strong>WireGuard</strong> para el acceso remoto, <strong>Vaultwarden</strong> como gestor de contraseñas, y Portainer y Watchtower para gestionar los contenedores. Reglas de cortafuegos propias en la cadena DOCKER-USER y monitorización de las URL públicas con avisos por Telegram. <strong>Copias nocturnas</strong> al disco externo, con los secretos cifrados con GPG y verificadas restaurándolas en contenedores efímeros. Un panel web y un bot de Telegram permiten consultar el estado, reiniciar servicios y restaurar copias con confirmación en dos pasos. Repositorio privado.",
         "proj_homepi_sub": "Servidor autoalojado sobre Raspberry Pi 4",
         "proj_badge_infra": "Infraestructura",
@@ -149,7 +145,7 @@ const translations = {
         "proj_habitforge_desc": "Seguimiento de hábitos multiusuario, instalable en el móvil como una app nativa y con funcionamiento offline. Notificaciones push reales con Web Push (VAPID) y un sistema de recordatorios priorizado (racha en peligro, última oportunidad y resumen semanal) que nunca envía más de una notificación por hora. Rachas, hitos, estadísticas diarias, semanales, mensuales y anuales, y un mapa de calor anual. API REST con Express y MariaDB; frontend en JavaScript vanilla con un service worker escrito a mano. Desplegado con Docker Compose y Traefik con HTTPS automático.",
         "about_p4": "Curso el Grado Superior de ASIX en Salesians Sarrià y sigo creciendo en redes y ciberseguridad. Estoy abierto a oportunidades en administración de sistemas, infraestructura y automatización.",
         "skills_dev": "DESARROLLO E IA",
-        "proj_badge_case": "Caso de estudio",
+        "proj_badge_case": "Código privado",
         "footer_rights": "Todos los derechos reservados"
     },
     "en": {
@@ -216,8 +212,6 @@ const translations = {
         "proj_view": "View on GitHub",
         "proj_ajuts_desc": "Reads Spain's National Grants Database (BDNS) every day and shows each user the open calls that match their profile and region, sorted by deadline. <strong>Deterministic scoring, no LLM</strong>, so it can run for years without watching a quota, with eligibility thresholds extracted from the call's PDF. Incremental sync that recovers gaps after downtime, and grouped Telegram notifications. Invitation-only multi-user app with <strong>Argon2id</strong> passwords, CSRF protection and personal data encrypted at rest (Fernet). 85 automated tests.",
         "proj_ajuts_sub": "Public grants finder",
-        "proj_cervell_desc": "A knowledge base over my course notes and study material that answers questions citing the source. <strong>Hybrid search</strong>: vector (sqlite-vec) and keyword (FTS5), fused with Reciprocal Rank Fusion. Ingests PDF, Word and PowerPoint, with Tesseract <strong>OCR</strong> for scans and Claude vision for handwriting, plus a confidence filter so garbled text never reaches the index. Resumable, idempotent ingestion keyed by hash, streamed answers with clickable citations and an installable PWA.",
-        "proj_cervell_sub": "Private RAG over my own notes",
         "proj_homepi_desc": "An ARM64 home server that hosts my projects under my own domain, run like a small production environment. <strong>Traefik</strong> reverse proxy with automatic HTTPS (Let's Encrypt), <strong>WireGuard</strong> VPN for remote access, <strong>Vaultwarden</strong> password manager, and Portainer and Watchtower for container management. Custom firewall rules in the DOCKER-USER chain and public-URL monitoring with Telegram alerts. <strong>Nightly backups</strong> to an external disk, with secrets encrypted with GPG and backups verified by restoring them into throwaway containers. A web dashboard and Telegram bot let me check status, restart services and restore backups with two-step confirmation. Private repository.",
         "proj_homepi_sub": "Self-hosted server on a Raspberry Pi 4",
         "proj_badge_infra": "Infrastructure",
@@ -225,7 +219,7 @@ const translations = {
         "proj_habitforge_desc": "A multi-user habit tracker, installable on mobile like a native app and fully functional offline. Real push notifications with Web Push (VAPID) and a prioritised reminder system (streak at risk, last chance and weekly summary) that never sends more than one notification per hour. Streaks, milestones, daily, weekly, monthly and yearly stats, and an annual heatmap. REST API on Express and MariaDB; frontend in vanilla JavaScript with a hand-written service worker. Deployed with Docker Compose and Traefik with automatic HTTPS.",
         "about_p4": "I'm studying the Higher Degree in ASIX at Salesians Sarrià and keep growing in networking and cybersecurity. I'm open to opportunities in systems administration, infrastructure and automation.",
         "skills_dev": "DEVELOPMENT & AI",
-        "proj_badge_case": "Case study",
+        "proj_badge_case": "Private source",
         "footer_rights": "All rights reserved"
     }
 };
