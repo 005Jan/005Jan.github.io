@@ -260,7 +260,7 @@
                     </div>
                     <span class="badge badge-outline" data-i18n="proj_badge_infra">Infraestructura</span>
                 </div>
-                <p class="card-text" data-i18n="proj_homepi_desc">Servidor domèstic (ARM64) que allotja els meus projectes sota un domini propi, gestionat com un petit entorn de producció. <strong>Traefik</strong> com a proxy invers amb HTTPS automàtic (Let's Encrypt), VPN <strong>WireGuard</strong> per a l'accés remot, <strong>Vaultwarden</strong> com a gestor de contrasenyes, i Portainer i Watchtower per gestionar els contenidors. Regles de tallafoc pròpies a la cadena DOCKER-USER i monitoratge de les URL públiques amb avisos per Telegram. <strong>Còpies nocturnes</strong> al disc extern, amb els secrets xifrats amb GPG i verificades restaurant-les en contenidors efímers. Un tauler web i un bot de Telegram permeten consultar l'estat, reiniciar serveis i restaurar còpies amb confirmació en dos passos. Repositori privat.</p>
+                <p class="card-text" data-i18n="proj_homepi_desc">Servidor domèstic (ARM64) que allotja els meus projectes sota un domini propi, gestionat com un petit entorn de producció. <strong>Traefik</strong> com a proxy invers amb HTTPS automàtic (Let's Encrypt), VPN <strong>WireGuard</strong> per a l'accés remot, <strong>Vaultwarden</strong> com a gestor de contrasenyes, i Portainer i Watchtower per gestionar els contenidors. Regles de tallafoc pròpies a la cadena DOCKER-USER i monitoratge de les URL públiques amb avisos per Telegram. <strong>Còpies nocturnes</strong> al disc extern, amb els secrets xifrats amb GPG i verificades restaurant-les en contenidors efímers. Un tauler web i un bot de Telegram permeten consultar l'estat, reiniciar serveis i restaurar còpies amb confirmació en dos passos.</p>
                 <div class="skills-tags">
                     <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux</span>
                     <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
@@ -294,24 +294,20 @@
             <div class="card project-card">
                 <div class="card-header">
                     <div>
-                        <h3 class="card-title">Ajuts</h3>
-                        <p class="card-subtitle" data-i18n="proj_ajuts_sub">Cercador de subvencions públiques</p>
+                        <h3 class="card-title">Armari</h3>
+                        <p class="card-subtitle" data-i18n="proj_armari_sub">Gestió d'armari familiar, pensada per al mòbil</p>
                     </div>
-                    <span class="badge badge-outline">Open Source</span>
+                    <span class="badge badge-outline" data-i18n="proj_badge_case">Codi privat</span>
                 </div>
-                <p class="card-text" data-i18n="proj_ajuts_desc">Llegeix cada dia la Base de Datos Nacional de Subvenciones (BDNS) i mostra a cada usuari les convocatòries obertes que encaixen amb el seu perfil i territori, ordenades per termini. <strong>Puntuació determinista, sense LLM</strong>, perquè pugui funcionar anys sense vigilar cap quota, i llindars extrets del PDF de les bases. Sincronització incremental que recupera els forats després d'una aturada i avisos agrupats per Telegram. Multi-usuari per invitació, amb contrasenyes <strong>Argon2id</strong>, protecció CSRF i dades personals xifrades (Fernet). 85 proves automatitzades.</p>
+                <p class="card-text" data-i18n="proj_armari_desc">Aplicació web per a la família (multi-usuari per invitació) per inventariar la roba des del mòbil: <strong>escàner de codis EAN</strong>, foto amb <strong>retall automàtic del fons</strong> (rembg) en una cua d'un en un perquè la Raspberry Pi no arribi a la swap, i catàleg amb filtres. Cada peça té un únic propietari i la <strong>compartició</strong> entre membres és una capa de visibilitat a sobre, amb permisos separats per veure i per fer servir. Les fotos es tornen a codificar en pujar-les per <strong>eliminar les dades EXIF amb GPS</strong> i se serveixen només després de comprovar-ne els permisos. Contrasenyes Argon2id, CSRF, CSP estricta i 83 proves automatitzades. Autoallotjat al HomePi darrere de Traefik.</p>
                 <div class="skills-tags">
                     <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
                     <span class="skill-tag"><i class="fa-solid fa-bolt"></i> FastAPI</span>
                     <span class="skill-tag"><i class="fa-solid fa-database"></i> SQLAlchemy · SQLite</span>
                     <span class="skill-tag"><i class="fa-solid fa-code"></i> HTMX</span>
-                    <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> Argon2id · CSRF</span>
+                    <span class="skill-tag"><i class="fa-solid fa-image"></i> rembg</span>
+                    <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> Argon2id · CSP</span>
                     <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
-                </div>
-                <div class="social-links" style="margin-top: 1.25rem;">
-                    <a href="https://github.com/005Jan/ajuts" target="_blank" class="social-btn">
-                        <i class="fa-brands fa-github"></i> <span data-i18n="proj_view">Veure al GitHub</span>
-                    </a>
                 </div>
             </div>
             <div class="card project-card">
