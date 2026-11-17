@@ -20,8 +20,8 @@ built with vanilla HTML, CSS and JavaScript — no framework, no build step.
   `data-i18n` key and the strings live in one `translations` object in
   [`main.js`](main.js). The choice is remembered in `localStorage`
   (`cv-lang`), defaulting to Catalan.
-- **Single-page layout**: hero, key figures, projects (with **Sulfata** as the
-  featured case study, live on the App Store and Google Play), experience,
+- **Single-page layout**: hero, key figures, projects (Sulfata, live on the
+  App Store and Google Play, and Kovia), experience,
   about (education, languages, skills, certifications) and contact.
 - **Scrollspy navigation** that highlights the section currently in view, plus
   reveal-on-scroll animations that respect `prefers-reduced-motion`.
