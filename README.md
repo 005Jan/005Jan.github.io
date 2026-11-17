@@ -20,11 +20,13 @@ built with vanilla HTML, CSS and JavaScript — no framework, no build step.
   `data-i18n` key and the strings live in one `translations` object in
   [`main.js`](main.js). The choice is remembered in `localStorage`
   (`cv-lang`), defaulting to Catalan.
-- **Single-page layout** with seven sections: about, experience, education,
-  skills, projects, languages and certifications.
+- **Single-page layout**: hero, key figures, projects (with **Sulfata** as the
+  featured case study, live on the App Store and Google Play), experience,
+  about (education, languages, skills, certifications) and contact.
 - **Scrollspy navigation** that highlights the section currently in view, plus
-  reveal-on-scroll animations.
-- **Dark theme**, responsive down to mobile.
+  reveal-on-scroll animations that respect `prefers-reduced-motion`.
+- **Light and dark themes**: follows the system setting, with a toggle that is
+  remembered in `localStorage` (`cv-theme`). Responsive down to mobile.
 
 ## Stack
 
@@ -37,6 +39,7 @@ index.html    Markup and all data-i18n keys
 main.js       Translations, language switcher, scrollspy, animations
 style.css     Theme, layout and animations
 profile.jpg   Profile photo
+img/          Sulfata icon and app screenshots (WebP)
 ```
 
 ## Running it locally
@@ -61,7 +64,8 @@ rule there silently blocks the Pages workflow.
 
 ## Adding or changing a translation
 
-1. Add the key to the element in `index.html`: `data-i18n="my_key"`.
+1. Add the key to the element in `index.html`: `data-i18n="my_key"`
+   (or `data-i18n-alt="my_key"` for an image's alt text).
 2. Add `"my_key"` to the `ca`, `es` and `en` blocks of `translations` in
    `main.js`.
 
