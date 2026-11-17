@@ -4,382 +4,338 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jan Camps Atmetller - Portfolio</title>
-    <meta name="description" content="Jan Camps Atmetller · IT Systems Technician · ASIX Student · Barcelona. Windows Server, Active Directory and process automation with Microsoft Power Platform.">
+    <title>Jan Camps Atmetller · Sistemes i apps</title>
+    <meta name="description" content="Jan Camps Atmetller · Tècnic de sistemes a Barcelona i creador de Sulfata, app de fitosanitaris publicada a App Store i Google Play.">
+    <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0e0f0d" media="(prefers-color-scheme: dark)">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Jan Camps Atmetller · Sistemes i apps">
+    <meta property="og:description" content="Tècnic de sistemes a Barcelona. Creador de Sulfata, a App Store i Google Play.">
+    <meta property="og:url" content="https://005jan.github.io/">
+    <meta property="og:image" content="https://005jan.github.io/profile.jpg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script>
+        document.documentElement.classList.add('js');
+        // Aplica el tema guardat abans de pintar, per evitar el parpelleig.
+        try {
+            const t = localStorage.getItem('cv-theme');
+            if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+        } catch (e) {}
+    </script>
 </head>
 
-<body class="dark-theme">
+<body>
+    <a class="skip-link" href="#main" data-i18n="skip">Salta al contingut</a>
 
-    <div class="ambient-glow glow-blue"></div>
-    <div class="ambient-glow glow-purple"></div>
-
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="logo">
-                <span class="logo-name">Jan Camps Atmetller</span>
-            </div>
+    <header class="site-header">
+        <nav class="nav wrap" aria-label="Principal">
+            <a href="#top" class="brand" aria-label="Jan Camps Atmetller">
+                <span class="brand-mark">JC</span>
+                <span class="brand-name">Jan Camps</span>
+            </a>
 
             <div class="nav-links">
-                <a href="#about"   class="nav-link" data-i18n="nav_about_short">Sobre mi</a>
-                <a href="#experience" class="nav-link" data-i18n="nav_exp_short">Experiència</a>
-                <a href="#education"  class="nav-link" data-i18n="nav_edu_short">Formació</a>
-                <a href="#skills"  class="nav-link" data-i18n="nav_skills_short">Habilitats</a>
-                <a href="#projects" class="nav-link" data-i18n="nav_projects_short">Projectes</a>
-                <a href="#certifications" class="nav-link" data-i18n="nav_certs_short">Cursos</a>
+                <a href="#projects" class="nav-link" data-i18n="nav_projects">Projectes</a>
+                <a href="#experience" class="nav-link" data-i18n="nav_exp">Experiència</a>
+                <a href="#about" class="nav-link" data-i18n="nav_about">Sobre mi</a>
+                <a href="#contact" class="nav-link" data-i18n="nav_contact">Contacte</a>
             </div>
 
-            <div class="lang-selector">
-                <button class="lang-btn active" data-lang="ca">CAT</button>
-                <button class="lang-btn" data-lang="es">ESP</button>
-                <button class="lang-btn" data-lang="en">ENG</button>
+            <div class="nav-tools">
+                <div class="lang-selector" role="group" aria-label="Idioma">
+                    <button class="lang-btn active" data-lang="ca">CA</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
+                <button class="icon-btn" id="theme-toggle" aria-label="Canvia el tema">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <main class="container">
+    <main id="main">
+
         <!-- ── HERO ── -->
-        <div class="hero-wrapper">
-            <section class="hero slide-up" style="--delay: 0.05s">
-                <div class="hero-content">
-                    <div class="status-badge">
-                        <span class="status-dot"></span>
-                        <span data-i18n="badge_status">Treballant a NeodataMeat</span>
-                    </div>
-                    <h1 class="hero-title">
-                        <span class="highlight">Jan Camps Atmetller</span>
-                    </h1>
-                    <p class="hero-role" data-i18n="hero_role">Tècnic de Sistemes IT · Estudiant d'ASIX · Barcelona</p>
-                    <p class="hero-subtitle" data-i18n="hero_desc">Infraestructura Windows i automatització de processos a NeodataMeat.</p>
-                    <div class="social-links">
-                        <a href="mailto:jcamps0005@gmail.com" class="social-btn">
-                            <i class="fa-regular fa-envelope"></i> jcamps0005@gmail.com
-                        </a>
-                        <a href="https://www.linkedin.com/in/jan-camps-atmetller-422630354/" target="_blank" rel="noopener" class="social-btn">
-                            <i class="fa-brands fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a href="https://github.com/005Jan" target="_blank" rel="noopener" class="social-btn">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
-                    </div>
+        <section class="hero wrap" id="top">
+            <div class="hero-text reveal">
+                <p class="eyebrow">
+                    <span class="pulse" aria-hidden="true"></span>
+                    <span data-i18n="hero_eyebrow">Barcelona · Tècnic de sistemes a NeodataMeat</span>
+                </p>
+                <h1 class="hero-title" data-i18n="hero_title">Mantinc sistemes en marxa i construeixo apps que la gent fa servir.</h1>
+                <p class="hero-lead" data-i18n="hero_lead">Soc en Jan. Administro infraestructura Windows i automatitzo processos amb Power Platform. Pel meu compte he dissenyat, programat i publicat <strong>Sulfata</strong>, una app per a pagesos que ja és a l'App Store i a Google Play.</p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span data-i18n="cta_work">Veure projectes</span>
+                        <i class="fa-solid fa-arrow-down"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost" data-i18n="cta_contact">Parlem</a>
                 </div>
-                <div class="hero-image">
-                    <div class="profile-img-wrapper">
-                        <img src="profile.jpg" alt="Jan Camps Atmetller" id="profile-img">
-                    </div>
-                </div>
-            </section>
-        </div>
-
-        <!-- ── SOBRE MI ── -->
-        <section id="about" class="section slide-up" style="--delay: 0.1s">
-            <h2 class="section-title">
-                <i class="fa-regular fa-user"></i>
-                <span data-i18n="nav_about">Sobre mi</span>
-            </h2>
-            <div class="about-card">
-                <p data-i18n="about_p1">Soc <strong>tècnic de sistemes</strong> en un entorn corporatiu, centrat en <strong>Windows Server, Active Directory</strong> i automatització de processos amb <strong>Microsoft Power Platform</strong>. Curso el CFGS d'ASIX a Salesians Sarrià i estic obert a oportunitats en sistemes, infraestructura i automatització.</p>
+                <ul class="hero-social">
+                    <li><a href="https://www.linkedin.com/in/jan-camps-atmetller-422630354/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://github.com/005Jan" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a></li>
+                    <li><a href="mailto:jcamps0005@gmail.com"><i class="fa-regular fa-envelope"></i> Email</a></li>
+                </ul>
             </div>
+
+            <figure class="hero-photo reveal" style="--d: .1s">
+                <img src="profile.jpg" alt="Jan Camps Atmetller" width="765" height="942">
+            </figure>
         </section>
 
-        <!-- ── EXPERIÈNCIA ── -->
-        <section id="experience" class="section slide-up" style="--delay: 0.1s">
-            <h2 class="section-title">
-                <i class="fa-solid fa-briefcase"></i>
-                <span data-i18n="nav_exp">Experiència</span>
-            </h2>
-            <div class="timeline">
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="card timeline-card">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" data-i18n="exp_title_1">Tècnic Junior de Sistemes</h3>
-                                <p class="card-subtitle">NeodataMeat</p>
-                            </div>
-                            <span class="badge" data-i18n="exp_date_1">Març 2025 – Actualitat</span>
-                        </div>
-                        <ul class="card-list" data-i18n-html="exp_desc_1">
-                            <li>Administració d'usuaris, grups i GPO amb Active Directory.</li>
-                            <li>Gestió i manteniment de Windows Server.</li>
-                            <li>Automatització de processos amb Power Automate.</li>
-                            <li>Administració de Microsoft Dynamics AX/BC i CRM.</li>
-                            <li>Gestió d'entorns virtualitzats.</li>
-                            <li>Helpdesk i suport tècnic als usuaris.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="card timeline-card">
-                        <div class="card-header">
-                            <div>
-                                <h3 class="card-title" data-i18n="exp_title_2">Tècnic de Sistemes (Pràctiques DUAL)</h3>
-                                <p class="card-subtitle">NeodataMeat</p>
-                            </div>
-                            <span class="badge" data-i18n="exp_date_2">Juny 2024 – Febrer 2025</span>
-                        </div>
-                        <ul class="card-list" data-i18n-html="exp_desc_2">
-                            <li>Resolució d'incidències.</li>
-                            <li>Configuració i inventari de hardware.</li>
-                            <li>Desplegament i manteniment de software.</li>
-                            <li>Documentació tècnica de processos interns.</li>
-                        </ul>
-                    </div>
-                </div>
-
+        <!-- ── XIFRES ── -->
+        <section class="facts wrap reveal" aria-label="Resum">
+            <div class="fact">
+                <span class="fact-num">2</span>
+                <span class="fact-label" data-i18n="fact_stores">botigues on és Sulfata: App Store i Google Play</span>
             </div>
-        </section>
-
-        <!-- ── FORMACIÓ ── -->
-        <section id="education" class="section slide-up" style="--delay: 0.1s">
-            <h2 class="section-title">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <span data-i18n="nav_edu">Formació</span>
-            </h2>
-            <div class="grid-2-col">
-                <div class="card edu-card">
-                    <h3 class="card-title">CFGS ASIX</h3>
-                    <p class="card-subtitle">Salesians Sarrià</p>
-                    <p class="card-text" data-i18n="edu_desc_1">Administració de Sistemes Informàtics en Xarxa</p>
-                    <span class="badge badge-outline" data-i18n="edu_date_1">En curs</span>
-                </div>
-
-                <div class="card edu-card">
-                    <h3 class="card-title">CFGM SMX</h3>
-                    <p class="card-subtitle">Salesians Sarrià</p>
-                    <p class="card-text" data-i18n="edu_desc_2">Sistemes Microinformàtics i Xarxes</p>
-                    <span class="badge badge-outline">2023 – 2025</span>
-                </div>
+            <div class="fact">
+                <span class="fact-num">2.000+</span>
+                <span class="fact-label" data-i18n="fact_products">productes fitosanitaris consultables sense connexió</span>
             </div>
-        </section>
-
-        <!-- ── HABILITATS ── -->
-        <section id="skills" class="section slide-up" style="--delay: 0.1s">
-            <h2 class="section-title">
-                <i class="fa-solid fa-layer-group"></i>
-                <span data-i18n="nav_skills">Habilitats</span>
-            </h2>
-
-            <div class="grid-2-col">
-                <div class="card skills-card border-blue span-2">
-                    <h3 class="card-title center-title" data-i18n="skills_systems">Sistemes i infraestructura</h3>
-                    <div class="skills-tags">
-                        <span class="skill-tag"><i class="fa-brands fa-windows"></i> Windows Server</span>
-                        <span class="skill-tag"><i class="fa-solid fa-users"></i> Active Directory</span>
-                        <span class="skill-tag"><i class="fa-solid fa-terminal"></i> PowerShell</span>
-                        <span class="skill-tag"><i class="fa-brands fa-linux"></i> Linux</span>
-                        <span class="skill-tag"><i class="fa-solid fa-terminal"></i> Bash</span>
-                        <span class="skill-tag"><i class="fa-solid fa-cubes"></i> Proxmox</span>
-                        <span class="skill-tag"><i class="fa-solid fa-hard-drive"></i> VMware</span>
-                        <span class="skill-tag"><i class="fa-brands fa-docker"></i> Docker</span>
-                        <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> FortiGate</span>
-                    </div>
-                </div>
-
-                <div class="card skills-card border-orange">
-                    <h3 class="card-title center-title" data-i18n="skills_business">Plataformes i automatització</h3>
-                    <div class="skills-tags">
-                        <span class="skill-tag"><i class="fa-solid fa-robot"></i> Power Automate</span>
-                        <span class="skill-tag"><i class="fa-solid fa-chart-column"></i> Power BI</span>
-                        <span class="skill-tag"><i class="fa-solid fa-wand-magic-sparkles"></i> Power Apps</span>
-                        <span class="skill-tag"><i class="fa-solid fa-briefcase"></i> Dynamics AX/BC/CRM</span>
-                        <span class="skill-tag"><i class="fa-solid fa-rotate"></i> UiPath</span>
-                        <span class="skill-tag"><i class="fa-brands fa-microsoft"></i> Microsoft 365</span>
-                    </div>
-                </div>
-
-                <div class="card skills-card border-purple">
-                    <h3 class="card-title center-title" data-i18n="skills_cloud">Cloud i IA</h3>
-                    <div class="skills-tags">
-                        <span class="skill-tag"><i class="fa-brands fa-aws"></i> AWS Bedrock</span>
-                        <span class="skill-tag"><i class="fa-solid fa-robot"></i> Claude</span>
-                        <span class="skill-tag"><i class="fa-solid fa-cloud"></i> <span data-i18n="skill_azure">Azure (bàsic)</span></span>
-                    </div>
-                </div>
-
-                <div class="card skills-card border-green">
-                    <h3 class="card-title center-title" data-i18n="skills_dev">Desenvolupament</h3>
-                    <div class="skills-tags">
-                        <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
-                        <span class="skill-tag"><i class="fa-solid fa-code"></i> TypeScript</span>
-                        <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
-                        <span class="skill-tag"><i class="fa-brands fa-node-js"></i> Node.js</span>
-                        <span class="skill-tag"><i class="fa-solid fa-bolt"></i> FastAPI</span>
-                        <span class="skill-tag"><i class="fa-solid fa-n"></i> Next.js</span>
-                        <span class="skill-tag"><i class="fa-brands fa-react"></i> React</span>
-                    </div>
-                </div>
-
-                <div class="card skills-card border-teal">
-                    <h3 class="card-title center-title" data-i18n="skills_db">Bases de dades</h3>
-                    <div class="skills-tags">
-                        <span class="skill-tag"><i class="fa-solid fa-database"></i> PostgreSQL · Supabase</span>
-                        <span class="skill-tag"><i class="fa-solid fa-database"></i> MariaDB</span>
-                        <span class="skill-tag"><i class="fa-solid fa-database"></i> SQL Server</span>
-                        <span class="skill-tag"><i class="fa-solid fa-database"></i> SQLite</span>
-                    </div>
-                </div>
+            <div class="fact">
+                <span class="fact-num">2024</span>
+                <span class="fact-label" data-i18n="fact_since">any en què vaig començar a NeodataMeat com a tècnic de sistemes</span>
+            </div>
+            <div class="fact">
+                <span class="fact-num">3</span>
+                <span class="fact-label" data-i18n="fact_langs">idiomes de treball: català, castellà i anglès</span>
             </div>
         </section>
 
         <!-- ── PROJECTES ── -->
-        <section id="projects" class="section slide-up" style="--delay: 0.1s">
-            <h2 class="section-title">
-                <i class="fa-solid fa-code"></i>
-                <span data-i18n="nav_projects">Projectes</span>
-            </h2>
-            <div class="projects-list">
+        <section id="projects" class="section wrap">
+            <header class="section-head reveal">
+                <p class="section-index">01</p>
+                <h2 class="section-title" data-i18n="projects_title">Projectes</h2>
+                <p class="section-intro" data-i18n="projects_intro">Productes que he portat de la idea a usuaris reals, fets en el meu temps lliure.</p>
+            </header>
 
-                <!--
-                    Per afegir un projecte, copia aquest bloc <article> i canvia "kovia"
-                    pel nom del projecte a les claus data-i18n. Després afegeix les claus
-                    proj_<nom>_sub, proj_<nom>_desc i proj_<nom>_points als blocs ca, es
-                    i en de `translations` a main.js.
-                -->
-                <article class="card project-card">
-                    <div class="card-header">
+            <!-- Sulfata (destacat) -->
+            <article class="feature reveal" id="sulfata">
+                <div class="feature-body">
+                    <div class="feature-head">
+                        <img src="img/sulfata-icon.webp" alt="" class="app-icon" width="64" height="64">
                         <div>
-                            <h3 class="card-title">Kovia</h3>
-                            <p class="card-subtitle" data-i18n="proj_kovia_sub">Assistent personal multiusuari amb IA</p>
+                            <h3 class="feature-title">Sulfata</h3>
+                            <p class="feature-meta"><span data-i18n="sulfata_kind">App mòbil · iOS i Android</span> · 2026</p>
                         </div>
+                        <span class="pill pill-live"><span class="pulse" aria-hidden="true"></span> <span data-i18n="live">Publicada</span></span>
                     </div>
-                    <p class="card-text" data-i18n="proj_kovia_desc">Aplicació web i PWA instal·lable on els usuaris gestionen despeses, agenda, hàbits, recordatoris, nutrició i notícies parlant amb un <strong>agent d'IA amb 23 eines</strong>, per text o per veu.</p>
-                    <ul class="card-list" data-i18n-html="proj_kovia_points">
-                        <li><strong>Multiusuari per disseny:</strong> aïllament de dades per usuari aplicat a PostgreSQL amb <strong>Row-Level Security</strong>.</li>
-                        <li>Agent sobre <strong>Claude (AWS Bedrock)</strong> amb streaming SSE i prompt caching; transcripció amb <strong>Whisper</strong>; registre de despeses a partir de tiquets amb visió.</li>
-                        <li><strong>Workers en segon pla</strong> per a recordatoris, tasques programades i un resum matinal personalitzat per Web Push.</li>
+
+                    <p class="feature-lead" data-i18n="sulfata_lead">Diu als pagesos quins productes fitosanitaris estan autoritzats a Espanya per al seu cultiu i la seva plaga, amb la dosi, el termini de seguretat i el nombre màxim d'aplicacions.</p>
+
+                    <dl class="feature-points">
+                        <div>
+                            <dt data-i18n="sulfata_p1_t">Funciona al camp, sense cobertura</dt>
+                            <dd data-i18n="sulfata_p1">Tot el registre oficial (més de 2.000 productes i 60.000 usos) va dins de l'app en una base SQLite comprimida d'uns 2,5 MB.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="sulfata_p2_t">Dades sempre al dia, sense servidor</dt>
+                            <dd data-i18n="sulfata_p2">Un pipeline amb GitHub Actions descarrega el registre del Ministeri, el converteix, en valida el resultat i el publica. L'app s'actualitza sola.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="sulfata_p3_t">Calendari i avisos</dt>
+                            <dd data-i18n="sulfata_p3">Calcula el primer dia de collita després de cada tractament i avisa si un producte desat deixa d'estar autoritzat.</dd>
+                        </div>
+                        <div>
+                            <dt data-i18n="sulfata_p4_t">Privacitat per defecte</dt>
+                            <dd data-i18n="sulfata_p4">Sense comptes, sense anuncis i sense seguiment. Subscripció gestionada amb RevenueCat i errors a Sentry (regió UE).</dd>
+                        </div>
+                    </dl>
+
+                    <ul class="tags" aria-label="Tecnologies">
+                        <li>Expo</li><li>React Native</li><li>TypeScript</li><li>SQLite</li><li>GitHub Actions</li><li>RevenueCat</li><li>Sentry</li><li>Maestro</li>
                     </ul>
-                    <div class="skills-tags project-tags">
-                        <span class="skill-tag">Next.js</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Fastify</span>
-                        <span class="skill-tag">Supabase</span>
-                        <span class="skill-tag">Claude (Bedrock)</span>
-                        <span class="skill-tag">Docker</span>
-                    </div>
-                </article>
 
+                    <div class="store-links">
+                        <a class="store-btn" href="https://apps.apple.com/es/app/sulfata-fitosanitarios/id6824568693" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-apple"></i>
+                            <span><small data-i18n="store_apple_small">Descarrega-la a</small>App Store</span>
+                        </a>
+                        <a class="store-btn" href="https://play.google.com/store/apps/details?id=com.jcaapps.sulfata" target="_blank" rel="noopener">
+                            <i class="fa-brands fa-google-play"></i>
+                            <span><small data-i18n="store_google_small">Disponible a</small>Google Play</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="feature-media" aria-hidden="false">
+                    <figure class="phone phone-back">
+                        <img src="img/sulfata-fitxa.webp" alt="Fitxa d'un producte a Sulfata" data-i18n-alt="alt_sulfata_2" loading="lazy" width="560" height="1148">
+                    </figure>
+                    <figure class="phone phone-front">
+                        <img src="img/sulfata-resultats.webp" alt="Productes autoritzats contra el míldiu de la vinya a Sulfata" data-i18n-alt="alt_sulfata_1" loading="lazy" width="560" height="1148">
+                    </figure>
+                    <figure class="phone phone-side">
+                        <img src="img/sulfata-tractaments.webp" alt="Calendari de tractaments amb el termini de seguretat a Sulfata" data-i18n-alt="alt_sulfata_3" loading="lazy" width="560" height="1148">
+                    </figure>
+                </div>
+            </article>
+
+            <!-- Kovia -->
+            <article class="project reveal">
+                <div class="project-top">
+                    <div>
+                        <h3 class="project-title">Kovia</h3>
+                        <p class="feature-meta" data-i18n="kovia_kind">Aplicació web i PWA · IA</p>
+                    </div>
+                    <span class="pill" data-i18n="kovia_status">Fase de validació</span>
+                </div>
+                <p class="project-text" data-i18n="kovia_desc">Assistent personal multiusuari: despeses, agenda, hàbits, recordatoris, nutrició i notícies, gestionats parlant amb un <strong>agent d'IA amb 23 eines</strong>, per text o per veu.</p>
+                <ul class="project-list" data-i18n="kovia_points">
+                    <li>Aïllament de dades per usuari a PostgreSQL amb <strong>Row-Level Security</strong>.</li>
+                    <li>Agent sobre <strong>Claude (AWS Bedrock)</strong> amb streaming i prompt caching; veu amb Whisper; despeses a partir de tiquets amb visió.</li>
+                    <li>Workers en segon pla per a recordatoris i un resum matinal per Web Push.</li>
+                </ul>
+                <ul class="tags" aria-label="Tecnologies">
+                    <li>Next.js</li><li>React</li><li>TypeScript</li><li>Fastify</li><li>Supabase</li><li>Claude (Bedrock)</li><li>Docker</li>
+                </ul>
+            </article>
+        </section>
+
+        <!-- ── EXPERIÈNCIA ── -->
+        <section id="experience" class="section wrap">
+            <header class="section-head reveal">
+                <p class="section-index">02</p>
+                <h2 class="section-title" data-i18n="exp_title">Experiència</h2>
+            </header>
+
+            <div class="xp reveal">
+                <div class="xp-company">
+                    <h3>NeodataMeat</h3>
+                    <p class="feature-meta" data-i18n="exp_where">Barcelona · Juny 2024 – actualitat</p>
+                </div>
+
+                <ol class="xp-roles">
+                    <li class="xp-role">
+                        <div class="xp-role-head">
+                            <h4 data-i18n="exp_role_1">Tècnic júnior de sistemes</h4>
+                            <span class="xp-date" data-i18n="exp_date_1">Març 2025 – actualitat</span>
+                        </div>
+                        <ul class="xp-list" data-i18n="exp_desc_1">
+                            <li>Usuaris, grups i GPO amb Active Directory.</li>
+                            <li>Administració i manteniment de Windows Server i d'entorns virtualitzats.</li>
+                            <li>Automatització de processos interns amb Power Automate.</li>
+                            <li>Administració de Microsoft Dynamics AX/BC i CRM.</li>
+                            <li>Helpdesk i suport tècnic als usuaris.</li>
+                        </ul>
+                    </li>
+                    <li class="xp-role">
+                        <div class="xp-role-head">
+                            <h4 data-i18n="exp_role_2">Tècnic de sistemes (FP dual)</h4>
+                            <span class="xp-date" data-i18n="exp_date_2">Juny 2024 – febrer 2025</span>
+                        </div>
+                        <ul class="xp-list" data-i18n="exp_desc_2">
+                            <li>Resolució d'incidències.</li>
+                            <li>Configuració i inventari de maquinari.</li>
+                            <li>Desplegament i manteniment de programari.</li>
+                            <li>Documentació tècnica de processos interns.</li>
+                        </ul>
+                    </li>
+                </ol>
             </div>
         </section>
 
-        <!-- ── IDIOMES ── -->
-        <section id="languages" class="section slide-up" style="--delay: 0.1s">
-            <h2 class="section-title">
-                <i class="fa-solid fa-language"></i>
-                <span data-i18n="nav_langs">Idiomes</span>
-            </h2>
-            <div class="grid-3-col">
-                <div class="card lang-card">
-                    <div class="lang-flag-icon" style="background: rgba(218,41,28,0.15); color: #da291c;">CA</div>
-                    <p class="lang-name" data-i18n="lang_cat">Català</p>
-                    <p class="lang-level-text" data-i18n="lang_native">Nadiu</p>
-                </div>
-                <div class="card lang-card">
-                    <div class="lang-flag-icon" style="background: rgba(170,21,27,0.15); color: #aa151b;">ES</div>
-                    <p class="lang-name" data-i18n="lang_es">Castellà</p>
-                    <p class="lang-level-text" data-i18n="lang_native">Nadiu</p>
-                </div>
-                <div class="card lang-card">
-                    <div class="lang-flag-icon" style="background: rgba(0,36,125,0.15); color: #6a9fd8;">EN</div>
-                    <p class="lang-name" data-i18n="lang_en">Anglès</p>
-                    <p class="lang-level-text" data-i18n="lang_professional">Professional</p>
-                </div>
-            </div>
-        </section>
+        <!-- ── SOBRE MI ── -->
+        <section id="about" class="section wrap">
+            <header class="section-head reveal">
+                <p class="section-index">03</p>
+                <h2 class="section-title" data-i18n="about_title">Sobre mi</h2>
+            </header>
 
-        <!-- ── CURSOS I CERTIFICACIONS ── -->
-        <section id="certifications" class="section slide-up" style="--delay: 0.1s">
-            <h2 class="section-title">
-                <i class="fa-solid fa-certificate"></i>
-                <span data-i18n="courses_title">Cursos i certificacions</span>
-            </h2>
-            <div class="certs-grid">
-                <div class="cert-card">
-                    <div class="cert-icon cert-icon-sec"><i class="fa-solid fa-shield-halved"></i></div>
-                    <div class="cert-info">
-                        <p class="cert-name">FortiGate 7.6 Operator</p>
-                        <p class="cert-issuer">Fortinet</p>
-                    </div>
+            <div class="about reveal">
+                <div class="about-text">
+                    <p data-i18n="about_p1">De dia treballo a sistemes: que la gent pugui entrar, que els servidors responguin i que les tasques repetitives es facin soles. Aquest ofici m'ha ensenyat a pensar en el que passa quan alguna cosa falla.</p>
+                    <p data-i18n="about_p2">Fora de la feina faig productes sencers: investigo el mercat, dissenyo, programo, publico a les botigues i en faig el manteniment. Treballo amb agents d'IA com Claude Code, amb fases clares i proves abans de cada publicació.</p>
                 </div>
-                <div class="cert-card">
-                    <div class="cert-icon cert-icon-sec"><i class="fa-solid fa-circle-check"></i></div>
-                    <div class="cert-info">
-                        <p class="cert-name">Getting Started in Cybersecurity 3.0</p>
-                        <p class="cert-issuer">Fortinet</p>
+
+                <div class="about-side">
+                    <div class="about-block">
+                        <h3 class="mini-title" data-i18n="edu_title">Formació</h3>
+                        <ul class="plain-list">
+                            <li><strong>CFGS ASIX</strong> · Salesians Sarrià <span class="muted" data-i18n="edu_date_1">· en curs</span></li>
+                            <li><strong>CFGM SMX</strong> · Salesians Sarrià <span class="muted">· 2023 – 2025</span></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon cert-icon-sec"><i class="fa-solid fa-lock"></i></div>
-                    <div class="cert-info">
-                        <p class="cert-name">Technical Introduction to Cybersecurity 3.0</p>
-                        <p class="cert-issuer">Fortinet</p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon cert-icon-sec"><i class="fa-solid fa-triangle-exclamation"></i></div>
-                    <div class="cert-info">
-                        <p class="cert-name">Introduction to the Threat Landscape 3.0</p>
-                        <p class="cert-issuer">Fortinet</p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon cert-icon-hack"><i class="fa-solid fa-user-secret"></i></div>
-                    <div class="cert-info">
-                        <p class="cert-name">Ethical Hacking</p>
-                        <p class="cert-issuer">Salesians Sarrià</p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon cert-icon-santander"><i class="fa-solid fa-microchip"></i></div>
-                    <div class="cert-info">
-                        <p class="cert-name" data-i18n="course_iot">Internet de les Coses (IoT)</p>
-                        <p class="cert-issuer">Santander Open Academy</p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon cert-icon-santander"><i class="fa-solid fa-chart-bar"></i></div>
-                    <div class="cert-info">
-                        <p class="cert-name">Power BI</p>
-                        <p class="cert-issuer">Santander Open Academy</p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon cert-icon-santander"><i class="fa-brands fa-microsoft"></i></div>
-                    <div class="cert-info">
-                        <p class="cert-name">Microsoft Copilot</p>
-                        <p class="cert-issuer">Santander Open Academy</p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon cert-icon-google"><i class="fa-brands fa-google"></i></div>
-                    <div class="cert-info">
-                        <p class="cert-name" data-i18n="course_google">Google: IA i productivitat</p>
-                        <p class="cert-issuer">Santander Open Academy</p>
-                    </div>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-icon cert-icon-ai"><i class="fa-solid fa-robot"></i></div>
-                    <div class="cert-info">
-                        <p class="cert-name" data-i18n="course_chatgpt">Fonaments de ChatGPT</p>
-                        <p class="cert-issuer">Santander Open Academy</p>
+                    <div class="about-block">
+                        <h3 class="mini-title" data-i18n="langs_title">Idiomes</h3>
+                        <p data-i18n="langs_text">Català i castellà (nadiu) · Anglès (professional)</p>
                     </div>
                 </div>
             </div>
+
+            <!-- Habilitats -->
+            <div class="skills reveal">
+                <div class="skill-group">
+                    <h3 class="mini-title" data-i18n="skills_systems">Sistemes i infraestructura</h3>
+                    <ul class="tags">
+                        <li>Windows Server</li><li>Active Directory</li><li>PowerShell</li><li>Linux</li><li>Bash</li><li>Proxmox</li><li>VMware</li><li>Docker</li><li>FortiGate</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="mini-title" data-i18n="skills_business">Plataformes i automatització</h3>
+                    <ul class="tags">
+                        <li>Power Automate</li><li>Power BI</li><li>Power Apps</li><li>Dynamics AX/BC/CRM</li><li>UiPath</li><li>Microsoft 365</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="mini-title" data-i18n="skills_dev">Desenvolupament</h3>
+                    <ul class="tags">
+                        <li>TypeScript</li><li>React Native · Expo</li><li>React</li><li>Next.js</li><li>Node.js</li><li>Python</li><li>FastAPI</li>
+                    </ul>
+                </div>
+                <div class="skill-group">
+                    <h3 class="mini-title" data-i18n="skills_data">Dades, cloud i IA</h3>
+                    <ul class="tags">
+                        <li>PostgreSQL · Supabase</li><li>SQLite</li><li>SQL Server</li><li>MariaDB</li><li>AWS Bedrock</li><li>Claude</li><li data-i18n="skill_azure">Azure (bàsic)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Certificacions -->
+            <div class="certs reveal">
+                <h3 class="mini-title" data-i18n="certs_title">Cursos i certificacions</h3>
+                <ul class="cert-list">
+                    <li><span>FortiGate 7.6 Operator</span><span class="muted">Fortinet</span></li>
+                    <li><span>Getting Started in Cybersecurity 3.0</span><span class="muted">Fortinet</span></li>
+                    <li><span>Technical Introduction to Cybersecurity 3.0</span><span class="muted">Fortinet</span></li>
+                    <li><span>Introduction to the Threat Landscape 3.0</span><span class="muted">Fortinet</span></li>
+                    <li><span>Ethical Hacking</span><span class="muted">Salesians Sarrià</span></li>
+                    <li><span data-i18n="course_iot">Internet de les Coses (IoT)</span><span class="muted">Santander Open Academy</span></li>
+                    <li><span>Power BI</span><span class="muted">Santander Open Academy</span></li>
+                    <li><span>Microsoft Copilot</span><span class="muted">Santander Open Academy</span></li>
+                    <li><span data-i18n="course_google">Google: IA i productivitat</span><span class="muted">Santander Open Academy</span></li>
+                    <li><span data-i18n="course_chatgpt">Fonaments de ChatGPT</span><span class="muted">Santander Open Academy</span></li>
+                </ul>
+            </div>
         </section>
 
-        <footer class="footer">
-            <p>&copy; 2026 Jan Camps Atmetller &middot; <span data-i18n="footer_rights">Tots els drets reservats</span></p>
-        </footer>
+        <!-- ── CONTACTE ── -->
+        <section id="contact" class="contact wrap reveal">
+            <p class="section-index">04</p>
+            <h2 class="contact-title" data-i18n="contact_title">Tens un projecte o una vacant? Parlem.</h2>
+            <p class="contact-text" data-i18n="contact_text">Obert a oportunitats en sistemes, infraestructura i automatització, i a encàrrecs d'apps mòbils.</p>
+            <a class="contact-mail" href="mailto:jcamps0005@gmail.com">jcamps0005@gmail.com <i class="fa-solid fa-arrow-right"></i></a>
+            <ul class="hero-social">
+                <li><a href="https://www.linkedin.com/in/jan-camps-atmetller-422630354/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                <li><a href="https://github.com/005Jan" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            </ul>
+        </section>
     </main>
+
+    <footer class="footer wrap">
+        <p>&copy; 2026 Jan Camps Atmetller</p>
+        <p class="muted" data-i18n="footer_built">Fet a mà amb HTML, CSS i JavaScript.</p>
+    </footer>
 
     <script src="main.js"></script>
 </body>
