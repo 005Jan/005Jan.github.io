@@ -21,7 +21,7 @@ built with vanilla HTML, CSS and JavaScript — no framework, no build step.
   [`main.js`](main.js). The choice is remembered in `localStorage`
   (`cv-lang`), defaulting to Catalan.
 - **Single-page layout**: hero, key figures, projects (Sulfata, live on the
-  App Store and Google Play, and Kovia), experience,
+  App Store and Google Play), experience,
   about (education, languages, skills, certifications) and contact.
 - **Scrollspy navigation** that highlights the section currently in view, plus
   reveal-on-scroll animations that respect `prefers-reduced-motion`.
