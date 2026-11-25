@@ -65,6 +65,13 @@
         </nav>
     </header>
 
+    <nav class="tabbar" aria-label="Seccions">
+        <a href="#projects" class="tab-link"><i class="fa-solid fa-layer-group" aria-hidden="true"></i><span data-i18n="nav_projects">Projectes</span></a>
+        <a href="#experience" class="tab-link"><i class="fa-solid fa-briefcase" aria-hidden="true"></i><span data-i18n="nav_exp">Experiència</span></a>
+        <a href="#about" class="tab-link"><i class="fa-solid fa-user" aria-hidden="true"></i><span data-i18n="nav_about">Sobre mi</span></a>
+        <a href="#contact" class="tab-link"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span data-i18n="nav_contact">Contacte</span></a>
+    </nav>
+
     <main id="main">
 
         <!-- ── HERO ── -->
@@ -72,7 +79,7 @@
             <div class="hero-text reveal">
                 <p class="eyebrow">
                     <span class="pulse" aria-hidden="true"></span>
-                    <span data-i18n="hero_eyebrow">Barcelona · Tècnic de sistemes a Neodatameat</span>
+                    <span data-i18n="hero_eyebrow">Barcelona · Tècnic de sistemes<span class="hide-sm"> a Neodatameat</span></span>
                 </p>
                 <h1 class="hero-title" data-i18n="hero_title">M'encarrego que la tecnologia funcioni, dels servidors a les apps.</h1>
                 <p class="hero-lead" data-i18n="hero_lead">Soc en Jan. Administro infraestructura Windows i automatitzo processos amb Power Platform. Pel meu compte dissenyo i programo apps mòbils i web, de la idea fins a la publicació.</p>
@@ -107,7 +114,7 @@
             </div>
             <div class="fact">
                 <span class="fact-num">2024</span>
-                <span class="fact-label" data-i18n="fact_since">any en què vaig començar a Neodatameat com a tècnic de sistemes</span>
+                <span class="fact-label" data-i18n="fact_since">any en què vaig entrar a Neodatameat</span>
             </div>
             <div class="fact">
                 <span class="fact-num">3</span>
@@ -258,7 +265,7 @@
             </div>
 
             <!-- Habilitats -->
-            <div class="skills reveal">
+            <div class="skills reveal collapsed" id="skills">
                 <div class="skill-group">
                     <h3 class="mini-title" data-i18n="skills_systems">Sistemes i infraestructura</h3>
                     <ul class="tags">
@@ -290,6 +297,12 @@
                     </ul>
                 </div>
             </div>
+
+            <button class="btn btn-ghost skills-toggle" type="button" aria-controls="skills" aria-expanded="false">
+                <span class="when-closed" data-i18n="skills_more">Veure totes les habilitats</span>
+                <span class="when-open" data-i18n="skills_less">Mostra'n menys</span>
+                <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+            </button>
 
             <!-- Certificacions -->
             <div class="certs reveal">

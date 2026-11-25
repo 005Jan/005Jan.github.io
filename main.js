@@ -8,14 +8,14 @@ const translations = {
         nav_exp: "Experiència",
         nav_about: "Sobre mi",
         nav_contact: "Contacte",
-        hero_eyebrow: "Barcelona · Tècnic de sistemes a Neodatameat",
+        hero_eyebrow: "Barcelona · Tècnic de sistemes<span class=\"hide-sm\"> a Neodatameat</span>",
         hero_title: "M'encarrego que la tecnologia funcioni, dels servidors a les apps.",
         hero_lead: "Soc en Jan. Administro infraestructura Windows i automatitzo processos amb Power Platform. Pel meu compte dissenyo i programo apps mòbils i web, de la idea fins a la publicació.",
         cta_work: "Veure projectes",
         cta_contact: "Parlem",
         fact_asix: "CFGS que curso a Salesians Sarrià",
         fact_certs: "cursos i certificacions, 4 d'ells de Fortinet",
-        fact_since: "any en què vaig començar a Neodatameat com a tècnic de sistemes",
+        fact_since: "any en què vaig entrar a Neodatameat",
         fact_langs: "idiomes de treball: català, castellà i anglès",
         projects_title: "Projectes",
         projects_intro: "Productes que he portat de la idea a usuaris reals, fets en el meu temps lliure.",
@@ -61,6 +61,8 @@ const translations = {
         skills_data: "Dades, cloud i IA",
         skill_azure: "Azure (bàsic)",
         certs_title: "Cursos i certificacions",
+        skills_more: "Veure totes les habilitats",
+        skills_less: "Mostra'n menys",
         course_iot: "Internet de les Coses (IoT)",
         course_google: "Google: IA i productivitat",
         course_chatgpt: "Fonaments de ChatGPT",
@@ -75,14 +77,14 @@ const translations = {
         nav_exp: "Experiencia",
         nav_about: "Sobre mí",
         nav_contact: "Contacto",
-        hero_eyebrow: "Barcelona · Técnico de sistemas en Neodatameat",
+        hero_eyebrow: "Barcelona · Técnico de sistemas<span class=\"hide-sm\"> en Neodatameat</span>",
         hero_title: "Me encargo de que la tecnología funcione, de los servidores a las apps.",
         hero_lead: "Soy Jan. Administro infraestructura Windows y automatizo procesos con Power Platform. Por mi cuenta diseño y programo apps móviles y web, de la idea a la publicación.",
         cta_work: "Ver proyectos",
         cta_contact: "Hablemos",
         fact_asix: "CFGS que curso en Salesians Sarrià",
         fact_certs: "cursos y certificaciones, 4 de ellos de Fortinet",
-        fact_since: "año en que empecé en Neodatameat como técnico de sistemas",
+        fact_since: "año en que entré en Neodatameat",
         fact_langs: "idiomas de trabajo: catalán, castellano e inglés",
         projects_title: "Proyectos",
         projects_intro: "Productos que he llevado de la idea a usuarios reales, hechos en mi tiempo libre.",
@@ -128,6 +130,8 @@ const translations = {
         skills_data: "Datos, cloud e IA",
         skill_azure: "Azure (básico)",
         certs_title: "Cursos y certificaciones",
+        skills_more: "Ver todas las habilidades",
+        skills_less: "Mostrar menos",
         course_iot: "Internet de las Cosas (IoT)",
         course_google: "Google: IA y productividad",
         course_chatgpt: "Fundamentos de ChatGPT",
@@ -142,14 +146,14 @@ const translations = {
         nav_exp: "Experience",
         nav_about: "About",
         nav_contact: "Contact",
-        hero_eyebrow: "Barcelona · Systems technician at Neodatameat",
+        hero_eyebrow: "Barcelona · Systems technician<span class=\"hide-sm\"> at Neodatameat</span>",
         hero_title: "I make technology work, from servers to apps.",
         hero_lead: "I'm Jan. I run Windows infrastructure and automate processes with the Power Platform. On my own I design and build mobile and web apps, from idea to release.",
         cta_work: "See projects",
         cta_contact: "Get in touch",
         fact_asix: "the higher VET degree I'm studying at Salesians Sarrià",
         fact_certs: "courses and certifications, 4 of them from Fortinet",
-        fact_since: "the year I joined Neodatameat as a systems technician",
+        fact_since: "the year I joined Neodatameat",
         fact_langs: "working languages: Catalan, Spanish and English",
         projects_title: "Projects",
         projects_intro: "Products I've taken from idea to real users, built in my spare time.",
@@ -195,6 +199,8 @@ const translations = {
         skills_data: "Data, cloud & AI",
         skill_azure: "Azure (basic)",
         certs_title: "Courses & certifications",
+        skills_more: "Show all skills",
+        skills_less: "Show less",
         course_iot: "Internet of Things (IoT)",
         course_google: "Google: AI and Productivity",
         course_chatgpt: "ChatGPT Fundamentals",
@@ -278,7 +284,7 @@ function initReveal() {
 
 // ── SCROLLSPY + HEADER BORDER ─────────────────────────────────────────────────
 function initScrollspy() {
-    const links = document.querySelectorAll('.nav-link[href^="#"]');
+    const links = document.querySelectorAll('.nav-link[href^="#"], .tab-link[href^="#"]');
     const sections = [...links].map(l => document.querySelector(l.getAttribute('href'))).filter(Boolean);
 
     const spy = new IntersectionObserver(entries => {
@@ -296,6 +302,18 @@ function initScrollspy() {
     onScroll();
 }
 
+// ── SKILLS TOGGLE (mòbil) ─────────────────────────────────────────────────────
+function initSkillsToggle() {
+    const btn = document.querySelector('.skills-toggle');
+    const box = document.getElementById('skills');
+    if (!btn || !box) return;
+    btn.addEventListener('click', () => {
+        const open = box.classList.toggle('collapsed') === false;
+        btn.setAttribute('aria-expanded', open);
+        if (!open) box.scrollIntoView({ block: 'start' });
+    });
+}
+
 // ── INIT ──────────────────────────────────────────────────────────────────────
 document.documentElement.classList.add('js');
 
@@ -307,4 +325,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initTheme();
     initReveal();
     initScrollspy();
+    initSkillsToggle();
 });
