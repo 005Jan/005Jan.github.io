@@ -370,7 +370,7 @@ figure { margin: 0; }
 
 @media (max-width: 760px) {
     .hero { grid-template-columns: 1fr; }
-    .hero-photo { max-width: 260px; order: -1; border-radius: 22px; }
+    .hero-photo { max-width: 260px; width: 100%; justify-self: center; order: -1; border-radius: 22px; }
     .facts { grid-template-columns: 1fr 1fr; }
     .fact { padding: 22px 12px 22px 0; }
     .fact + .fact { padding-left: 0; border-left: 0; }

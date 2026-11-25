@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<style>.bg{fill:#141513}.fg{fill:#f6f5f1}@media (prefers-color-scheme:dark){.bg{fill:#eceee8}.fg{fill:#0e0f0d}}</style>
+<rect class="bg" width="64" height="64" rx="16"/>
+<g class="fg" transform="translate(13.15 42.73) scale(0.01441 -0.01441)"><path transform="translate(0 0)" d="M546 -22C855 -22 1044 145 1044 445V1490H736V449C736 312 662 237 543 237C423 237 349 312 349 449V552H59V451C59 147 244 -22 546 -22Z"/><path transform="translate(1131 0)" d="M771 -24C1120 -24 1380 191 1427 523H1117C1079 348 951 248 775 248C521 248 373 441 373 744C373 1049 522 1242 775 1242C952 1242 1081 1141 1116 965H1427C1380 1298 1120 1514 771 1514C361 1514 63 1220 63 744C63 271 362 -24 771 -24Z"/></g>
+</svg>
